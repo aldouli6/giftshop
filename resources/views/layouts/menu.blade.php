@@ -1,3 +1,10 @@
+<li class="nav-item">
+    <a href="{{ route('home') }}"
+       class="nav-link {{ Request::is('home') ? 'active' : '' }}">
+        <p>Store</p>
+    </a>
+</li>
+
 @role('admin')
 <li class="nav-item">
     <a href="{{ route('users.index') }}"

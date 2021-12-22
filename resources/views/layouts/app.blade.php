@@ -47,18 +47,27 @@
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
             </li>
         </ul>
-
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a href="{{ route('cart.list') }}"  class="btn btn-primary">
+                <i class="fas fa-shopping-cart"></i> <span class="badge badge-light">{{ Cart::getTotalQuantity()}}</span>
+            </a>
+            </li>
+        </ul>
+        
+       
+        @if(Auth::user())
         <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown user-menu">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                    <img src="https://assets.infyom.com/logo/blue_logo_150x150.png"
+                    <img src="https://us.123rf.com/450wm/yupiramos/yupiramos1607/yupiramos160716623/60042446-cara-de-dibujos-animados-con-sueño-icono-carácter-del-vector-illustation.jpg?ver=6"
                          class="user-image img-circle elevation-2" alt="User Image">
                     <span class="d-none d-md-inline">{{ Auth::user()->name }}</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                     <!-- User image -->
                     <li class="user-header bg-primary">
-                        <img src="https://assets.infyom.com/logo/blue_logo_150x150.png"
+                        <img src="https://us.123rf.com/450wm/yupiramos/yupiramos1607/yupiramos160716623/60042446-cara-de-dibujos-animados-con-sueño-icono-carácter-del-vector-illustation.jpg?ver=6"
                              class="img-circle elevation-2"
                              alt="User Image">
                         <p>
@@ -80,6 +89,7 @@
                 </ul>
             </li>
         </ul>
+        @endif
     </nav>
 
     <!-- Left side column. contains the logo and sidebar -->
@@ -93,13 +103,8 @@
     </div>
 
     <!-- Main Footer -->
-    <footer class="main-footer">
-        <div class="float-right d-none d-sm-block">
-            <b>Version</b> 3.0.5
-        </div>
-        <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights
-        reserved.
-    </footer>
+   
+
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"

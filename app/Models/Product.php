@@ -9,11 +9,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 /**
  * Class Product
  * @package App\Models
- * @version December 21, 2021, 6:00 pm UTC
+ * @version December 21, 2021, 6:20 pm UTC
  *
  * @property string $description
  * @property integer $categorie_id
  * @property number $price
+ * @property string $url_img
  */
 class Product extends Model
 {
@@ -31,7 +32,8 @@ class Product extends Model
     public $fillable = [
         'description',
         'categorie_id',
-        'price'
+        'price',
+        'url_img'
     ];
 
     /**
@@ -43,7 +45,8 @@ class Product extends Model
         'id' => 'integer',
         'description' => 'string',
         'categorie_id' => 'integer',
-        'price' => 'double'
+        'price' => 'double',
+        'url_img' => 'string'
     ];
 
     /**
@@ -54,7 +57,8 @@ class Product extends Model
     public static $rules = [
         'description' => 'required',
         'categorie_id' => 'required',
-        'price' => 'required'
+        'price' => 'required',
+        'url_img' => 'required'
     ];
 
     

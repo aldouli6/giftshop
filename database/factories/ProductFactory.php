@@ -25,6 +25,7 @@ class ProductFactory extends Factory
             'description' => $this->faker->word,
         'categorie_id' => $this->faker->randomDigitNotNull,
         'price' => $this->faker->word,
+        'url_img' => $this->faker->word,
         'created_at' => $this->faker->date('Y-m-d H:i:s'),
         'updated_at' => $this->faker->date('Y-m-d H:i:s')
         ];

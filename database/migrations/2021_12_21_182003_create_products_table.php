@@ -19,6 +19,7 @@ class CreateProductsTable extends Migration
             $table->string('description');
             $table->integer('categorie_id')->unsigned();
             $table->double('price');
+            $table->string('url_img');
             $table->timestamps();
             $table->softDeletes();
             $table->foreign('categorie_id')->references('id')->on('categories');

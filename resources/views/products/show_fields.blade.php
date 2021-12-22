@@ -22,6 +22,12 @@
     <p>{{ $product->price }}</p>
 </div>
 
+<!-- Url Img Field -->
+<div class="col-sm-12">
+    {!! Form::label('url_img', 'Url Img:') !!}
+    <p>{{ $product->url_img }}</p>
+</div>
+
 <!-- Created At Field -->
 <div class="col-sm-12">
     {!! Form::label('created_at', 'Created At:') !!}

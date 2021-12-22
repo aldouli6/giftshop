@@ -16,3 +16,9 @@
     {!! Form::label('price', 'Price:') !!}
     {!! Form::number('price', null, ['class' => 'form-control']) !!}
 </div>
+
+<!-- Url Img Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('url_img', 'Url Img:') !!}
+    {!! Form::text('url_img', null, ['class' => 'form-control']) !!}
+</div>

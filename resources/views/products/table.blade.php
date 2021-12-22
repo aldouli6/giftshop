@@ -6,6 +6,7 @@
         <th>Description</th>
         <th>Categorie Id</th>
         <th>Price</th>
+        <th>Url Img</th>
                 <th colspan="3">Action</th>
             </tr>
         </thead>
@@ -16,6 +17,7 @@
             <td>{{ $product->description }}</td>
             <td>{{ $categoryItems[ $product->categorie_id] ?? '' }}</td>
             <td>{{ $product->price }}</td>
+            <td><img src="{{ $product->url_img }}"  width="50" height="60"></td>
                 <td width="120">
                     {!! Form::open(['route' => ['products.destroy', $product->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

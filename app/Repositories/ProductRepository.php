@@ -8,7 +8,7 @@ use App\Repositories\BaseRepository;
 /**
  * Class ProductRepository
  * @package App\Repositories
- * @version December 21, 2021, 6:00 pm UTC
+ * @version December 21, 2021, 6:20 pm UTC
 */
 
 class ProductRepository extends BaseRepository
@@ -19,7 +19,8 @@ class ProductRepository extends BaseRepository
     protected $fieldSearchable = [
         'description',
         'categorie_id',
-        'price'
+        'price',
+        'url_img'
     ];
 
     /**
